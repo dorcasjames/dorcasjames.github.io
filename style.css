@@ -1,59 +1,148 @@
 :root {
-    --bg-color: #0f1217;
-    --card-bg: #161b22;
-    --border-color: #30363d;
-    --text-primary: #c9d1d9;
-    --text-heading: #ffffff;
-    --accent-color: #238636;
-    --accent-hover: #2ea043;
-    --tag-bg: #21262d;
+    --bg-color: #090d16;
+    --card-bg: #111827;
+    --card-hover: #1f2937;
+    --border-color: #1f2937;
+    --border-hover: #374151;
+    --text-primary: #9ca3af;
+    --text-heading: #f9fafb;
+    --accent-color: #10b981;
+    --accent-glow: rgba(16, 185, 129, 0.15);
+    --accent-hover: #059669;
+    --tag-bg: #1f2937;
+    --badge-bg: rgba(16, 185, 129, 0.1);
+    --badge-text: #34d399;
 }
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Plus Jakarta Sans', sans-serif;
     background-color: var(--bg-color);
     color: var(--text-primary);
-    line-height: 1.6;
-    padding-bottom: 40px;
+    line-height: 1.7;
+    padding-bottom: 60px;
 }
 
 .container {
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 24px;
 }
 
+/* Navbar */
+.navbar {
+    position: sticky;
+    top: 0;
+    background: rgba(9, 13, 22, 0.85);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border-color);
+    z-index: 1000;
+    padding: 16px 0;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text-heading);
+    letter-spacing: -1px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.nav-links a {
+    color: var(--text-primary);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.nav-links a:hover {
+    color: var(--text-heading);
+}
+
+.nav-btn {
+    background: var(--badge-bg);
+    color: var(--badge-text) !important;
+    padding: 6px 14px;
+    border-radius: 6px;
+    border: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+/* Hero Section */
 .hero {
-    padding: 60px 0 40px;
+    padding: 80px 0 60px;
     border-bottom: 1px solid var(--border-color);
     text-align: center;
+    background: radial-gradient(circle at center, rgba(16, 185, 129, 0.03) 0%, transparent 70%);
+}
+
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--badge-bg);
+    color: var(--badge-text);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+    border: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+.status-dot {
+    width: 8px;
+    height: 8px;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    box-shadow: 0 0 8px var(--accent-color);
 }
 
 .hero h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     color: var(--text-heading);
-    margin-bottom: 10px;
+    margin-bottom: 12px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
 }
 
 .role-tag {
-    font-family: 'Fira Code', monospace;
-    color: #58a6ff;
+    font-family: 'JetBrains Mono', monospace;
+    color: #60a5fa;
     font-size: 1rem;
     margin-bottom: 10px;
 }
 
 .location {
-    font-size: 0.9rem;
-    color: #8b949e;
-    margin-bottom: 25px;
+    font-size: 0.95rem;
+    color: var(--text-primary);
+    margin-bottom: 30px;
 }
 
+.location i {
+    color: var(--accent-color);
+    margin-right: 6px;
+}
+
+/* Buttons & Socials */
 .social-links {
     display: flex;
     justify-content: center;
@@ -64,88 +153,156 @@ body {
 .btn {
     background-color: var(--card-bg);
     color: var(--text-heading);
-    padding: 8px 16px;
+    padding: 10px 18px;
     border: 1px solid var(--border-color);
-    border-radius: 6px;
+    border-radius: 8px;
     text-decoration: none;
     font-size: 0.9rem;
     font-weight: 500;
-    transition: background 0.2s;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.25s ease;
 }
 
 .btn:hover {
-    background-color: var(--border-color);
+    background-color: var(--card-hover);
+    border-color: var(--border-hover);
+    transform: translateY(-2px);
 }
 
 .btn.primary {
     background-color: var(--accent-color);
     border-color: var(--accent-color);
+    color: #000000;
+    font-weight: 600;
 }
 
 .btn.primary:hover {
     background-color: var(--accent-hover);
+    box-shadow: 0 4px 20px var(--accent-glow);
 }
 
+/* Sections */
 .section {
-    margin-top: 40px;
+    margin-top: 60px;
 }
 
 .section h2 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     color: var(--text-heading);
     margin-bottom: 20px;
-    border-bottom: 1px solid var(--border-color);
-    padding-bottom: 8px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
 }
 
-.about p {
-    font-size: 1.05rem;
+.section-desc {
+    font-size: 0.95rem;
     color: var(--text-primary);
+    margin-bottom: 20px;
 }
 
-.grid-3 {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 20px;
-}
-
+/* Cards & Layouts */
 .card {
     background-color: var(--card-bg);
     border: 1px solid var(--border-color);
-    border-radius: 8px;
-    padding: 20px;
+    border-radius: 12px;
+    padding: 24px;
+    transition: border-color 0.25s ease, transform 0.25s ease;
+}
+
+.card:hover {
+    border-color: var(--border-hover);
+}
+
+.summary-card p {
+    font-size: 1.05rem;
+    color: var(--text-heading);
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.timeline-card {
+    position: relative;
+}
+
+.card-header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 4px;
 }
 
 .card h3 {
     color: var(--text-heading);
-    font-size: 1.2rem;
-    margin-bottom: 4px;
+    font-size: 1.15rem;
+    font-weight: 600;
+}
+
+.badge {
+    background: var(--badge-bg);
+    color: var(--badge-text);
+    padding: 3px 10px;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-family: 'JetBrains Mono', monospace;
+    border: 1px solid rgba(16, 185, 129, 0.2);
 }
 
 .card-subtitle {
     font-size: 0.85rem;
-    color: #8b949e;
-    margin-bottom: 12px;
+    color: #60a5fa;
+    margin-bottom: 14px;
+    font-family: 'JetBrains Mono', monospace;
 }
 
 .card ul {
-    list-style-type: disc;
-    padding-left: 20px;
-    font-size: 0.9rem;
+    list-style-type: none;
+    padding-left: 0;
 }
 
 .card ul li {
-    margin-bottom: 6px;
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 8px;
+    font-size: 0.92rem;
 }
 
-.skill-group {
-    margin-bottom: 20px;
+.card ul li::before {
+    content: "▹";
+    position: absolute;
+    left: 0;
+    color: var(--accent-color);
 }
 
-.skill-group h3 {
-    font-size: 1rem;
-    color: #8b949e;
-    margin-bottom: 10px;
+/* Project Grid */
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.project-card p {
+    font-size: 0.9rem;
+    color: var(--text-primary);
+}
+
+/* Skills */
+.skill-category {
+    margin-bottom: 24px;
+}
+
+.skill-category h3 {
+    font-size: 0.95rem;
+    color: var(--text-heading);
+    margin-bottom: 12px;
+    font-weight: 600;
 }
 
 .tags {
@@ -158,19 +315,48 @@ body {
     background-color: var(--tag-bg);
     border: 1px solid var(--border-color);
     padding: 6px 12px;
-    border-radius: 6px;
+    border-radius: 8px;
     font-size: 0.85rem;
-    font-family: 'Fira Code', monospace;
+    font-family: 'JetBrains Mono', monospace;
     color: var(--text-heading);
+    transition: border-color 0.2s;
 }
 
+.tags span:hover {
+    border-color: var(--accent-color);
+}
+
+/* Contact Section */
+.contact-section {
+    text-align: center;
+}
+
+.contact-card {
+    background: linear-gradient(135deg, var(--card-bg) 0%, rgba(16, 185, 129, 0.03) 100%);
+    border: 1px solid rgba(16, 185, 129, 0.2);
+    padding: 40px 24px;
+}
+
+.contact-card h2 {
+    margin-bottom: 10px;
+}
+
+.contact-card p {
+    max-width: 500px;
+    margin: 0 auto 24px;
+}
+
+.contact-actions {
+    justify-content: center;
+}
+
+/* Footer */
 footer {
-    margin-top: 60px;
+    margin-top: 80px;
     border-top: 1px solid var(--border-color);
-    padding-top: 20px;
+    padding: 30px 0;
     text-align: center;
     font-size: 0.85rem;
-    color: #8b949e;
 }
 
 .footer-content {
@@ -184,5 +370,14 @@ footer {
     .footer-content {
         flex-direction: row;
         justify-content: space-between;
+    }
+}
+
+@media(max-width: 768px) {
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+    .nav-links {
+        display: none;
     }
 }
