@@ -127,3 +127,13 @@ footer{background:#0b0f10;color:#7d8988;border-top:1px solid rgba(255,255,255,.0
   .education-card{padding:26px;gap:20px}
   .footer-inner{flex-direction:column}
 }
+
+/* Hero photo + WhatsApp */
+.hero h1{max-width:640px}
+.hero-photo{position:absolute;right:0;top:50%;transform:translateY(-50%);width:300px;height:300px;object-fit:cover;border-radius:24px;border:1px solid rgba(255,255,255,.18);box-shadow:0 24px 60px rgba(0,0,0,.45)}
+.button-wa{background:#25D366;color:#0b0f10}
+.contact-links a.wa{background:#25D366;color:#0b0f10;border-color:#25D366;font-weight:600}
+.cert-line{margin-top:14px}
+@media (max-width:1000px){
+  .hero-photo{position:static;transform:none;width:150px;height:150px;margin-bottom:24px}
+}
