@@ -1,288 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Adebamigbe Dorcas Adeyemi — Virtual Assistant, Educator and Cybersecurity Practitioner.">
-  <meta name="theme-color" content="#101416">
-  <title>Adebamigbe Dorcas Adeyemi | Portfolio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adebamigbe Dorcas Adeyemi | Virtual Assistant &amp; Cybersecurity Practitioner</title>
+<meta name="description" content="Remote virtual assistant backed by five years of teaching experience and hands-on cybersecurity projects. Available for remote roles.">
+<meta name="theme-color" content="#0B1020">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Adebamigbe Dorcas Adeyemi | Virtual Assistant &amp; Cybersecurity Practitioner">
+<meta property="og:description" content="Remote virtual assistant backed by five years of teaching experience and hands-on cybersecurity projects.">
+<meta property="og:image" content="https://dorcasjames.github.io/photo.jpg">
+<meta property="og:url" content="https://dorcasjames.github.io/">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230B1020'/%3E%3Ctext x='32' y='43' font-size='28' font-family='Arial' font-weight='700' text-anchor='middle' fill='%232DD4BF'%3EDA%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js')</script>
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <header class="site-header">
-    <div class="container nav-wrap">
-      <a class="brand" href="#" aria-label="Dorcas Adeyemi home">DA<span>.</span></a>
-      <nav aria-label="Primary navigation">
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact" class="nav-cta">Let's talk</a>
-      </nav>
-    </div>
-  </header>
+<div class="progress" id="progress"></div>
 
-  <main>
-    <section class="hero">
-      <div class="hero-grid"></div>
-      <div class="container hero-inner">
-        <img class="hero-photo" src="photo.jpg" alt="Portrait of Adebamigbe Dorcas Adeyemi">
-        <div class="availability"><span></span> Available for remote roles</div>
+<header class="site-header" id="header">
+  <div class="container nav">
+    <a class="brand" href="#home" aria-label="Home">DA<span>.</span></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+    <nav class="links" id="links" aria-label="Primary">
+      <a href="#work">Work</a>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a class="nav-cv" href="cv.html">View CV</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div><div class="grid-bg"></div>
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <div class="pill"><span class="dot"></span> Available for remote roles</div>
         <p class="eyebrow">Remote / Global</p>
-        <h1>Adebamigbe<br><em>Dorcas Adeyemi</em></h1>
-        <p class="hero-role">Virtual Assistant <b>·</b> Cybersecurity Practitioner</p>
-        <p class="hero-copy">
-          Remote virtual assistant who keeps inboxes, calendars, research and workflows running smoothly, backed by five years of teaching experience and hands-on cybersecurity skills.
-        </p>
-        <div class="hero-actions">
-          <a class="button button-light" href="mailto:tszibiah@gmail.com">Email me <span>↗</span></a>
-          <a class="button button-wa" href="https://wa.me/2348134538338" target="_blank" rel="noopener">WhatsApp <span>↗</span></a>
-          <a class="button button-outline" href="https://www.linkedin.com/in/dorcas-adebamigbe" target="_blank" rel="noopener">LinkedIn <span>↗</span></a>
-          <a class="text-link" href="https://github.com/dorcasjames" target="_blank" rel="noopener">View GitHub →</a>
+        <h1>Adebamigbe<br><span class="grad">Dorcas Adeyemi</span></h1>
+        <p class="role">I'm a <span id="rotator">Virtual Assistant</span><span class="caret"></span></p>
+        <p class="lead">Remote virtual assistant who keeps inboxes, calendars, research and workflows running smoothly, backed by five years of teaching experience and hands-on cybersecurity skills.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="mailto:tszibiah@gmail.com">Hire me ↗</a>
+          <a class="btn btn-wa" href="https://wa.me/2348134538338" target="_blank" rel="noopener">WhatsApp</a>
+          <a class="btn" href="#work">View my work</a>
+          <a class="btn" href="cv.html">View CV</a>
         </div>
       </div>
-    </section>
-
-    <section id="experience" class="section section-muted">
-      <div class="container">
-        <p class="section-label">01 / Experience</p>
-        <div class="section-head">
-          <h2 class="section-title">Work that shows <em>range</em>.</h2>
-          <p>Selected experience across administration, education and remote operations.</p>
-        </div>
-
-        <div class="experience-list">
-          <article class="experience-item">
-            <div class="experience-date">2025 — Present</div>
-            <div>
-              <h3>Virtual Assistant <span>· Remote</span></h3>
-              <p class="company">The Catalyst Effect</p>
-              <ul>
-                <li>Managed 300+ monthly email communications with a consistent 24-hour response target.</li>
-                <li>Organized digital workflows and content calendars, coordinating 40+ monthly digital assets.</li>
-                <li>Conducted online research and prepared reports to support leadership decisions.</li>
-                <li>Supported 15+ clients with calendar management, client management and media work (photography and editing).</li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="experience-item">
-            <div class="experience-date">Nov 2025 — Mar 2026</div>
-            <div>
-              <h3>Office Administrator</h3>
-              <p class="company">Yinka Muyiwa Chambers</p>
-              <ul>
-                <li>Coordinated front-desk and daily administrative operations and handled 50+ monthly client inquiries.</li>
-                <li>Maintained filing systems, documentation records and communication logs with attention to accuracy.</li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="experience-item">
-            <div class="experience-date">2019 — 2024</div>
-            <div>
-              <h3>Educator <span>· Primary & Secondary</span></h3>
-              <p class="company">Multi-School Instruction</p>
-              <ul>
-                <li>Delivered Mathematics, Physics and Geography instruction to 100+ students with reported 90%+ pass rates.</li>
-                <li>Created curriculum-aligned lesson plans and used Google Classroom, Zoom and Google Meet for digital learning.</li>
-              </ul>
-            </div>
-          </article>
-        </div>
+      <div class="hero-photo">
+        <div class="avatar"><img src="photo.jpg" alt="Portrait of Adebamigbe Dorcas Adeyemi"></div>
       </div>
-    </section>
-
-    <section id="projects" class="section">
-      <div class="container">
-        <p class="section-label">02 / Cybersecurity portfolio</p>
-        <div class="section-head">
-          <div>
-            <h2 class="section-title">Applied security <em>projects</em>.</h2>
-            <p class="section-intro">Ten public projects demonstrating practical defensive-security and security-testing work.</p>
-          </div>
-          <a class="small-link" href="https://github.com/dorcasjames" target="_blank" rel="noopener">All repositories ↗</a>
-        </div>
-
-        <div class="project-grid">
-          <article class="project-card">
-            <div class="project-top"><span>01</span><a href="https://github.com/dorcasjames/sentinel-process-agent" target="_blank" rel="noopener">↗</a></div>
-            <h3>Sentinel-Process-Agent</h3>
-            <p>Process monitoring, service enumeration and cron-job analysis for defensive operations.</p>
-            <ul class="project-detail"><li>Linux-compatible Python application that simulates Windows process monitoring, service enumeration and cron-job analysis.</li><li>Designed for defensive security operations.</li><li>Includes anomaly detection and real-time alerting.</li></ul>
-            <div class="tags"><span>Python</span><span>Monitoring</span><span>Linux</span></div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-top"><span>02</span><a href="https://github.com/dorcasjames/registry-monitor" target="_blank" rel="noopener">↗</a></div>
-            <h3>SentinelShield Registry Monitor</h3>
-            <p>Registry-change detection with JSON and SQLite-backed forensic logging.</p>
-            <ul class="project-detail"><li>Registry change monitoring system built with JSON and SQLite.</li><li>Tracks configuration alterations and unauthorized modifications for forensic analysis.</li><li>Database schema designed for efficient logging and querying, plus a dashboard that visualizes security-sensitive changes.</li></ul>
-            <div class="tags"><span>Python</span><span>SQLite</span><span>Forensics</span></div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-top"><span>03</span><a href="https://github.com/dorcasjames/threat-intelligence-aggregator" target="_blank" rel="noopener">↗</a></div>
-            <h3>Threat Intelligence Aggregator</h3>
-            <p>Aggregates, parses and normalizes indicators of compromise from multiple feeds.</p>
-            <ul class="project-detail"><li>Aggregates threat indicators (IOCs) from multiple security feeds.</li><li>Parses and normalizes the data for threat assessment.</li><li>Correlation engine that links related threats and generates intelligence summaries.</li></ul>
-            <div class="tags"><span>Python</span><span>IOC</span><span>Threat Intel</span></div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-top"><span>04</span><a href="https://github.com/dorcasjames/file-transfer-monitoring-system" target="_blank" rel="noopener">↗</a></div>
-            <h3>File Transfer Monitoring System</h3>
-            <p>Tracks file access and transfer activity with logging for incident-response review.</p>
-            <ul class="project-detail"><li>Monitors file access and transfers to detect unauthorized data movement and flag suspicious access patterns.</li><li>Forensic logging mechanism supporting incident response and data-exfiltration risk assessment.</li></ul>
-            <div class="tags"><span>Python</span><span>Monitoring</span><span>IR</span></div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-top"><span>05</span><a href="https://github.com/dorcasjames/pdf-malware-analysis-toolkit" target="_blank" rel="noopener">↗</a></div>
-            <h3>PDF Malware Analysis Toolkit</h3>
-            <p>Static analysis workflow for suspicious PDFs, IOCs and threat-severity classification.</p>
-            <ul class="project-detail"><li>Toolkit for analyzing suspicious PDF files and identifying indicators of compromise (IOCs).</li><li>Classifies threat severity and attack vectors.</li><li>Pattern recognition for malware signature detection, with a reporting framework for threat assessment.</li></ul>
-            <div class="tags"><span>Python</span><span>Malware</span><span>IOCs</span></div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-top"><span>06</span><a href="https://github.com/dorcasjames/password-cracking-credential-suite" target="_blank" rel="noopener">↗</a></div>
-            <h3>Credential Attack Suite</h3>
-            <p>Educational framework covering password attacks, hashes and credential weaknesses.</p>
-            <ul class="project-detail"><li>Educational framework demonstrating password attack techniques, hash analysis and credential vulnerabilities for defensive awareness.</li><li>Documents common attack vectors, countermeasures and best practices for credential protection.</li></ul>
-            <div class="tags"><span>Python</span><span>Hashes</span><span>Security Testing</span></div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-top"><span>07</span><a href="https://github.com/dorcasjames/sentinelshield-waf" target="_blank" rel="noopener">↗</a></div>
-            <h3>SentinelShield WAF</h3>
-            <p>Rule-based web application firewall detecting SQL injection, XSS and path-traversal patterns.</p>
-            <ul class="project-detail"><li>Detects and blocks common attack patterns (SQL injection, XSS, path traversal) at the request level.</li><li>Request logging and alerting to support incident review and tuning of detection rules.</li></ul>
-            <div class="tags"><span>Python</span><span>WAF</span><span>Web Security</span></div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-top"><span>08</span><a href="https://github.com/dorcasjames/privesc-automation-toolkit" target="_blank" rel="noopener">↗</a></div>
-            <h3>Privilege Escalation Automation</h3>
-            <p>Enumerates common Linux privilege-escalation vectors for defensive auditing and prioritization.</p>
-            <ul class="project-detail"><li>Enumerates common Linux privilege-escalation vectors: misconfigurations, weak permissions and exploitable services.</li><li>Produces structured reports that flag escalation risks and prioritize remediation.</li><li>Built for defensive auditing.</li></ul>
-            <div class="tags"><span>Linux</span><span>Python</span><span>Auditing</span></div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-top"><span>09</span><a href="https://github.com/dorcasjames/usb-control-framework" target="_blank" rel="noopener">↗</a></div>
-            <h3>USB Control Framework</h3>
-            <p>Monitors USB-device connections and records events for access control and review.</p>
-            <ul class="project-detail"><li>Monitors and controls USB device connections, flagging unauthorized removable media for data-loss prevention.</li><li>Logs device events for forensic review and policy enforcement.</li></ul>
-            <div class="tags"><span>Python</span><span>Endpoint</span><span>DLP</span></div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-top"><span>10</span><a href="https://github.com/dorcasjames/payload-encoder" target="_blank" rel="noopener">↗</a></div>
-            <h3>Payload Encoder</h3>
-            <p>Encoding utility used to explore obfuscation concepts and defensive signature research.</p>
-            <ul class="project-detail"><li>Encoding utility that demonstrates obfuscation techniques used in security testing and defensive signature research.</li><li>Documents encoding schemes and their detection implications for blue-team awareness.</li></ul>
-            <div class="tags"><span>JavaScript</span><span>Encoding</span><span>Research</span></div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="about" class="section">
-      <div class="container two-col">
-        <div>
-          <p class="section-label">03 / About</p>
-          <h2 class="section-title">Three strengths.<br><em>One dependable professional.</em></h2>
-        </div>
-        <div class="about-copy">
-          <p>
-            I bring together strong organization, communication and learning skills with practical
-            technical experience. My work spans remote administration, classroom delivery and
-            hands-on cybersecurity projects.
-          </p>
-          <p>
-            I am comfortable learning new tools, documenting work clearly, researching unfamiliar
-            problems and turning tasks into structured, repeatable workflows. I am also a Web3 enthusiast.
-          </p>
-          <div class="stat-row">
-            <div><strong>5+</strong><span>Years in education</span></div>
-            <div><strong>10</strong><span>Cybersecurity projects</span></div>
-            <div><strong>95%</strong><span>Task completion rate*</span></div>
-          </div>
-          <p class="fine-print">*Reported performance metric from the Virtual Assistant role.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="skills" class="section section-muted">
-      <div class="container">
-        <p class="section-label">04 / Skills</p>
-        <div class="skill-layout">
-          <div>
-            <h2 class="section-title">Skills &amp; capabilities.</h2>
-            <p class="section-intro">Practical tools and strengths across administration, education, and cybersecurity.</p>
-          </div>
-          <div class="skill-groups">
-            <div class="skill-group">
-              <h3>Virtual Assistance</h3>
-              <div class="skill-tags"><span>Executive Assistance</span><span>Inbox Management</span><span>Calendar Scheduling</span><span>Online Research</span><span>Documentation</span><span>Workflow Coordination</span><span>Google Workspace</span><span>Asana / Trello</span></div>
-            </div>
-            <div class="skill-group">
-              <h3>Education</h3>
-              <div class="skill-tags"><span>Curriculum Design</span><span>Mathematics</span><span>Physics</span><span>Geography</span><span>Student Assessment</span><span>Classroom Management</span><span>Google Classroom</span><span>Digital Learning</span></div>
-            </div>
-            <div class="skill-group">
-              <h3>Cybersecurity</h3>
-              <div class="skill-tags"><span>Python</span><span>Bash</span><span>Linux / Termux</span><span>Git & GitHub</span><span>Network Analysis</span><span>Threat Intelligence</span><span>Malware Analysis</span><span>Security Monitoring</span><span>Web Security</span></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container education-card">
-        <div>
-          <p class="section-label">05 / Education</p>
-          <h2>B.Sc. (Education)</h2>
-          <p class="company">Adeyemi Federal University of Education, Ondo</p>
-        </div>
-        <div>
-          <span class="date-pill">Completed 2026</span>
-          <p>Specialization in Mathematics, Physics and General Science Education.</p>
-          <p>Research project: <em>The Effects of Sleep and Rest on Academic Performance</em> (2025).</p>
-          <p class="cert-line">Certification: Virtual Assistant Professional (VAP), Digital Exchange Academy (DEXA), April 2024.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="contact">
-      <div class="container contact-inner">
-        <p class="section-label">06 / Contact</p>
-        <h2>Let's build something <em>useful.</em></h2>
-        <p>Open to remote, full-time and contract opportunities across Virtual Assistance, Education and Cybersecurity.</p>
-        <div class="contact-links">
-          <a class="wa" href="https://wa.me/2348134538338" target="_blank" rel="noopener">Chat on WhatsApp ↗</a>
-          <a href="mailto:tszibiah@gmail.com">tszibiah@gmail.com ↗</a>
-          <a href="https://www.linkedin.com/in/dorcas-adebamigbe" target="_blank" rel="noopener">LinkedIn ↗</a>
-          <a href="https://github.com/dorcasjames" target="_blank" rel="noopener">GitHub ↗</a>
-          <a href="https://www.instagram.com/ts_zibiah" target="_blank" rel="noopener">Instagram ↗</a>
-          <a href="https://x.com/tszyrell" target="_blank" rel="noopener">X · Cybersecurity ↗</a>
-          <a href="https://x.com/ts_Zibia" target="_blank" rel="noopener">X · Web3 ↗</a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="container footer-inner">
-      <span>© 2026 Adebamigbe Dorcas Adeyemi</span>
-      <span>Hosted on GitHub Pages</span>
     </div>
-  </footer>
+  </section>
+
+  <section class="stats">
+    <div class="container stat-grid">
+      <div class="stat reveal"><strong data-count="5" data-suffix="+">5+</strong><span>Years in education</span></div>
+      <div class="stat reveal" style="--d:.08s"><strong data-count="15" data-suffix="+">15+</strong><span>Clients supported</span></div>
+      <div class="stat reveal" style="--d:.16s"><strong data-count="300" data-suffix="+">300+</strong><span>Monthly emails managed</span></div>
+      <div class="stat reveal" style="--d:.24s"><strong data-count="10" data-suffix="">10</strong><span>Security projects built</span></div>
+    </div>
+  </section>
+
+  <section class="section" id="work">
+    <div class="container">
+      <div class="head reveal">
+        <p class="label">Selected work</p>
+        <h2 class="title">Applied security <span class="grad">projects</span></h2>
+        <p class="intro">Practical defensive-security and security-testing projects, all public on GitHub.</p>
+      </div>
+      <div class="grid2">
+        <article class="card project reveal">
+          <div class="thumb t1">WAF</div>
+          <div class="pbody">
+            <p class="num">01</p>
+            <h3>SentinelShield WAF</h3>
+            <p>Rule-based web application firewall that detects and blocks SQL injection, XSS and path-traversal patterns at the request level, with logging and alerting for incident review.</p>
+            <div class="chips"><span>Python</span><span>WAF</span><span>Web Security</span></div>
+            <a class="plink" href="https://github.com/dorcasjames/sentinelshield-waf" target="_blank" rel="noopener">View on GitHub ↗</a>
+          </div>
+        </article>
+        <article class="card project reveal" style="--d:.1s">
+          <div class="thumb t2">PDF</div>
+          <div class="pbody">
+            <p class="num">02</p>
+            <h3>PDF Malware Analysis Toolkit</h3>
+            <p>Static analysis workflow for suspicious PDFs that identifies indicators of compromise, classifies threat severity and attack vectors, and produces threat-assessment reports.</p>
+            <div class="chips"><span>Python</span><span>Malware</span><span>IOCs</span></div>
+            <a class="plink" href="https://github.com/dorcasjames/pdf-malware-analysis-toolkit" target="_blank" rel="noopener">View on GitHub ↗</a>
+          </div>
+        </article>
+        <article class="card project reveal">
+          <div class="thumb t3">IOC</div>
+          <div class="pbody">
+            <p class="num">03</p>
+            <h3>Threat Intelligence Aggregator</h3>
+            <p>Aggregates indicators of compromise from multiple security feeds, normalizes them, and correlates related threats into intelligence summaries.</p>
+            <div class="chips"><span>Python</span><span>IOC</span><span>Threat Intel</span></div>
+            <a class="plink" href="https://github.com/dorcasjames/threat-intelligence-aggregator" target="_blank" rel="noopener">View on GitHub ↗</a>
+          </div>
+        </article>
+        <article class="card project reveal" style="--d:.1s">
+          <div class="thumb t4">PROC</div>
+          <div class="pbody">
+            <p class="num">04</p>
+            <h3>Sentinel-Process-Agent</h3>
+            <p>Linux-compatible Python tool simulating Windows-style process monitoring, service enumeration and cron-job analysis, with anomaly detection and real-time alerting.</p>
+            <div class="chips"><span>Python</span><span>Monitoring</span><span>Linux</span></div>
+            <a class="plink" href="https://github.com/dorcasjames/sentinel-process-agent" target="_blank" rel="noopener">View on GitHub ↗</a>
+          </div>
+        </article>
+      </div>
+
+      <details class="more reveal">
+        <summary>More projects (6)</summary>
+        <div class="more-list">
+          <a class="row" href="https://github.com/dorcasjames/registry-monitor" target="_blank" rel="noopener"><div><b>SentinelShield Registry Monitor</b><small>Registry-change detection with JSON and SQLite-backed forensic logging.</small></div><span>↗</span></a>
+          <a class="row" href="https://github.com/dorcasjames/file-transfer-monitoring-system" target="_blank" rel="noopener"><div><b>File Transfer Monitoring System</b><small>Tracks file access and transfers, with logging for incident-response review.</small></div><span>↗</span></a>
+          <a class="row" href="https://github.com/dorcasjames/password-cracking-credential-suite" target="_blank" rel="noopener"><div><b>Credential Attack Suite</b><small>Educational framework covering password attacks, hashes and credential weaknesses.</small></div><span>↗</span></a>
+          <a class="row" href="https://github.com/dorcasjames/privesc-automation-toolkit" target="_blank" rel="noopener"><div><b>Privilege Escalation Automation</b><small>Enumerates Linux privilege-escalation vectors for defensive auditing and prioritization.</small></div><span>↗</span></a>
+          <a class="row" href="https://github.com/dorcasjames/usb-control-framework" target="_blank" rel="noopener"><div><b>USB Control Framework</b><small>Monitors USB-device connections and records events for access control and review.</small></div><span>↗</span></a>
+          <a class="row" href="https://github.com/dorcasjames/payload-encoder" target="_blank" rel="noopener"><div><b>Payload Encoder</b><small>Encoding utility for exploring obfuscation concepts and defensive signature research.</small></div><span>↗</span></a>
+        </div>
+      </details>
+      <div class="center reveal"><a class="btn" href="https://github.com/dorcasjames" target="_blank" rel="noopener">All repositories on GitHub ↗</a></div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="services">
+    <div class="container">
+      <div class="head reveal">
+        <p class="label">How I can help</p>
+        <h2 class="title">Reliable remote <span class="grad">support</span></h2>
+        <p class="intro">Day-to-day coordination for founders, teams and busy professionals.</p>
+      </div>
+      <div class="grid3">
+        <div class="card reveal"><div class="icon">📧</div><h3>Inbox &amp; communication</h3><p>Managing 300+ monthly emails with a consistent 24-hour response target.</p></div>
+        <div class="card reveal" style="--d:.08s"><div class="icon">📅</div><h3>Calendar &amp; client management</h3><p>Scheduling, coordination and day-to-day support across 15+ clients.</p></div>
+        <div class="card reveal" style="--d:.16s"><div class="icon">🗂️</div><h3>Workflows &amp; content</h3><p>Organized digital workflows and content calendars, coordinating 40+ monthly digital assets.</p></div>
+        <div class="card reveal"><div class="icon">🔎</div><h3>Research &amp; reporting</h3><p>Online research and clear reports that support leadership decisions.</p></div>
+        <div class="card reveal" style="--d:.08s"><div class="icon">📸</div><h3>Media support</h3><p>Photography and editing for client content.</p></div>
+        <div class="card reveal" style="--d:.16s"><div class="icon">📁</div><h3>Documentation &amp; records</h3><p>Filing systems, documentation records and communication logs kept accurate and easy to find.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p class="label">About me</p>
+          <h2 class="title">Organized. Technical. <span class="grad">Dependable.</span></h2>
+          <p style="margin-top:22px">I bring together strong organization, communication and learning skills with practical technical experience. My work spans remote administration, classroom delivery and hands-on cybersecurity projects.</p>
+          <p>I am comfortable learning new tools, documenting work clearly, researching unfamiliar problems and turning tasks into structured, repeatable workflows. I am also a Web3 enthusiast.</p>
+          <div class="actions"><a class="btn btn-primary" href="cv.html">See my full CV →</a></div>
+        </div>
+        <div class="facts">
+          <div class="card reveal"><small>Education</small><h3>B.Sc. (Education)</h3><p>Adeyemi Federal University of Education, Ondo. Completed 2026. Specialization in Mathematics, Physics and General Science Education.</p></div>
+          <div class="card reveal" style="--d:.08s"><small>Certification</small><h3>Virtual Assistant Professional (VAP)</h3><p>Digital Exchange Academy (DEXA), April 2024.</p></div>
+          <div class="card reveal" style="--d:.16s"><small>Research</small><h3>Sleep, Rest &amp; Academic Performance</h3><p>Final-year research project on the effects of sleep and rest on academic performance (2025).</p></div>
+        </div>
+      </div>
+
+      <div class="skills">
+        <div class="card reveal"><h3>Virtual Assistance</h3><div class="chips"><span>Executive Assistance</span><span>Inbox Management</span><span>Calendar Scheduling</span><span>Online Research</span><span>Documentation</span><span>Workflow Coordination</span><span>Google Workspace</span><span>Asana / Trello</span></div></div>
+        <div class="card reveal" style="--d:.08s"><h3>Education</h3><div class="chips"><span>Curriculum Design</span><span>Mathematics</span><span>Physics</span><span>Geography</span><span>Student Assessment</span><span>Classroom Management</span><span>Google Classroom</span><span>Digital Learning</span></div></div>
+        <div class="card reveal" style="--d:.16s"><h3>Cybersecurity</h3><div class="chips"><span>Python</span><span>Bash</span><span>Linux / Termux</span><span>Git &amp; GitHub</span><span>Network Analysis</span><span>Threat Intelligence</span><span>Malware Analysis</span><span>Security Monitoring</span><span>Web Security</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt contact" id="contact">
+    <div class="blob b2" style="top:-200px;right:-100px"></div>
+    <div class="container" style="position:relative;z-index:1">
+      <p class="label reveal">Contact</p>
+      <h2 class="reveal">Let's build something <span class="grad">useful.</span></h2>
+      <p class="sub reveal">Open to remote, full-time and contract opportunities across Virtual Assistance, Education and Cybersecurity.</p>
+      <div class="actions reveal">
+        <a class="btn btn-wa" href="https://wa.me/2348134538338" target="_blank" rel="noopener">Chat on WhatsApp</a>
+        <a class="btn btn-primary" href="mailto:tszibiah@gmail.com">tszibiah@gmail.com ↗</a>
+      </div>
+      <div class="socials reveal">
+        <a href="https://www.linkedin.com/in/dorcas-adebamigbe" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a href="https://github.com/dorcasjames" target="_blank" rel="noopener">GitHub ↗</a>
+        <a href="https://www.instagram.com/ts_zibiah" target="_blank" rel="noopener">Instagram ↗</a>
+        <a href="https://x.com/tszyrell" target="_blank" rel="noopener">X · Cybersecurity ↗</a>
+        <a href="https://x.com/ts_Zibia" target="_blank" rel="noopener">X · Web3 ↗</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container foot">
+    <span>© 2026 Adebamigbe Dorcas Adeyemi</span>
+    <span>Hosted on GitHub Pages</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
