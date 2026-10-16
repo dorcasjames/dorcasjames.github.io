@@ -1,5 +1,5 @@
 (function () {
-  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var reduce = false;
   var $ = function (id) { return document.getElementById(id); };
 
   // Scroll progress bar + sticky header style

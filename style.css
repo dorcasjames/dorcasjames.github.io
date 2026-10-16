@@ -168,12 +168,6 @@ footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);font-s
   .links .nav-cv{margin-top:12px;text-align:center;border:1px solid var(--line)}
 }
 
-/* Reduced motion */
-@media(prefers-reduced-motion:reduce){
-  *,*::before,*::after{animation:none!important;transition:none!important}
-  html{scroll-behavior:auto}
-  .js .reveal{opacity:1;transform:none}
-}
 
 /* Print (CV to PDF) */
 @media print{
@@ -183,4 +177,18 @@ footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);font-s
   .cv-wrap{padding:0}
   .cv ul,.cv p.txt{color:#222}
   .cv-head a{color:#0f766e}
+}
+
+/* v2: photo size, color motion, gentle reduced-motion */
+.avatar{height:min(300px,70vw)}
+@media(max-width:860px){.avatar{width:190px;height:190px}}
+.grad{background-size:220% auto;animation:shimmer 7s ease-in-out infinite alternate}
+@keyframes shimmer{to{background-position:100% 50%}}
+.b1,.b2,.b3{animation:float 16s ease-in-out infinite,hue 12s ease-in-out infinite alternate}
+@keyframes hue{to{filter:blur(80px) hue-rotate(80deg)}}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .avatar::before{animation:none}
+  .b1,.b2,.b3{animation:hue 12s ease-in-out infinite alternate}
+  .js .reveal{transform:none}
 }
