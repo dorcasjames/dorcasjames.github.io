@@ -192,3 +192,16 @@ footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);font-s
   .b1,.b2,.b3{animation:hue 12s ease-in-out infinite alternate}
   .js .reveal{transform:none}
 }
+
+/* v3: tools chips, CV buttons, CV chooser */
+.chips.tools{margin-top:14px}
+.chips.tools span{border-color:rgba(45,212,191,.35);color:#9fe9dc}
+.cv-row{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-top:20px;font-size:.88rem;color:var(--muted)}
+.cv-row a{border:1px solid var(--line);padding:7px 14px;border-radius:999px;color:var(--text);background:var(--card);transition:border-color .2s,transform .2s}
+.cv-row a:hover{border-color:var(--teal);transform:translateY(-2px)}
+a.pick{display:block}
+a.pick .plink{display:inline-block;padding-top:14px}
+.cv-choose{max-width:980px;margin:0 auto;padding:60px 20px 90px}
+.cv-choose h1{font-size:clamp(2rem,5vw,3rem);letter-spacing:-.04em;margin:10px 0 8px}
+.cv-choose .sub{color:var(--muted);margin-bottom:34px}
+@media print{.cv-choose{display:none}}

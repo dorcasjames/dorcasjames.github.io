@@ -67,7 +67,7 @@
   // Rotating role line (typing effect)
   var rot = $('rotator');
   if (rot && !reduce) {
-    var words = ['Virtual Assistant', 'Cybersecurity Practitioner', 'Web3 Enthusiast'];
+    var words = ['Virtual Assistant', 'Cybersecurity Practitioner'];
     var w = 0, c = words[0].length, deleting = false;
     (function tick() {
       var word = words[w];
@@ -90,7 +90,7 @@
   });
 
   // Page transition between index and CV
-  document.querySelectorAll('a[href="cv.html"], a[href="index.html"]').forEach(function (a) {
+  document.querySelectorAll('a[href$=".html"]').forEach(function (a) {
     a.addEventListener('click', function (e) {
       if (e.metaKey || e.ctrlKey || e.shiftKey || reduce) return;
       e.preventDefault();
